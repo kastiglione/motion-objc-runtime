@@ -2,8 +2,8 @@
 
 motion-objc-runtime gives RubyMotion some of the metaprogramming
 capabilities currently lacking. By exposing the Objective-C runtime,
-#define_method and other metaprogramming staples can be used from
-within RubyMotion apps.
+methods such as #define_method and other metaprogramming staples can
+be used from within RubyMotion apps.
 
 The Objective-C runtime is exposed the same way RubyMotion exposes
 other UIKit and other iOS frameworks, via BrideSupport files created
