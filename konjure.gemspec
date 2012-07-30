@@ -13,6 +13,8 @@ Gem::Specification.new do |gem|
   gem.files         = `git ls-files`.split($\)
   gem.require_paths = ['lib']
 
+  gem.add_dependency 'motion-objc-runtime'
+
   gem.summary       = <<-END.gsub(/^ +/, '')
     Konjure provides improved metaprogramming facilities to
     RubyMotion. Currently, Konjure provides a no-hack implementation
