@@ -3,7 +3,7 @@ Gem::Specification.new do |gem|
   gem.name          = 'motion-objc-runtime'
   gem.description   = 'Exposes Objective-C runtime in RubyMotion'
   gem.homepage      = "https://github.com/kastiglione/#{gem.name}"
-  gem.version       = '0.0.1'
+  gem.version       = '0.0.2'
 
   gem.authors       = ['Dave Lee']
   gem.email         = ['dave@kastiglione.com']
