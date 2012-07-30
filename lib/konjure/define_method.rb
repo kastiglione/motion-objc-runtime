@@ -2,7 +2,7 @@ module Module
 
   # Overwrite the existing useless implementation
   def define_method(name, &block)
-    raise  if block.nil?
+    raise ArgumentError, 'Block required' if block.nil?
 
     signature = Konjure::objc_parameter_signature(block)
     objc_define_method(name, :object, signature, &block)
