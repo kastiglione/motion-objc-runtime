@@ -42,7 +42,9 @@ class << Motion::Project::App
     real_setup.call(&block)
     generate_bridgesupport(config.variables)
     configs.each_value do |app|
-      app.bridgesupport_files << BRIDGESUPPORT_FILE
+      unless app.bridgesupport_files.include? BRIDGESUPPORT_FILES
+        app.bridgesupport_files << BRIDGESUPPORT_FILE
+      end
     end
   end
 end
