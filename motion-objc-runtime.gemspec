@@ -1,6 +1,6 @@
 # -*- encoding: utf-8 -*-
 Gem::Specification.new do |gem|
-  gem.name          = 'motion-objc-runtime'
+  gem.name          = 'motion-objc-runtime-bundler-fix'
   gem.description   = 'Exposes Objective-C runtime in RubyMotion'
   gem.homepage      = "https://github.com/kastiglione/#{gem.name}"
   gem.version       = '0.0.4'
