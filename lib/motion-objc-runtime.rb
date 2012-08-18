@@ -22,7 +22,7 @@ def generate_bridgesupport(config)
   header = "#{objc_include_dir}/runtime.h"
 
   # see man gen_bridge_metadata
-  `#{gen_bridge_metadata} #{opts} #{header} > #{BRIDGESUPPORT_FILE}`
+  `RUBYOPT='' #{gen_bridge_metadata} #{opts} #{header} > #{BRIDGESUPPORT_FILE}`
 end
 
 # Tap into App::setup to appropriately generate the Objective-C
