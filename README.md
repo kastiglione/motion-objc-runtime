@@ -1,10 +1,8 @@
 # motion-objc-runtime
 
 motion-objc-runtime exposes the Objective-C runtime API. This allows
-RubyMotion access building blocks necessary to provide the
-metaprogramming capabilities currently lacking in RubyMotion. By
-exposing the ObjC runtime, `define_method` and other metaprogramming
-staples can be enabled for RubyMotion apps.
+RubyMotion to access building blocks necessary to perform advanced
+metaprogramming capabilities in RubyMotion.
 
 The Objective-C runtime is exposed the same way RubyMotion exposes C
 functions from UIKit and other iOS frameworks, via BrideSupport files

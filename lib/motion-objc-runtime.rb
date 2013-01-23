@@ -41,7 +41,7 @@ class Motion::Project::App
   define_singleton_method(:setup) do |&block|
     real_setup.call(&block)
     generate_bridgesupport(config.variables)
-    configs.each_value do |app|
+    @configs.each_value do |app|
       unless app.bridgesupport_files.include? BRIDGESUPPORT_FILE
         app.bridgesupport_files << BRIDGESUPPORT_FILE
       end
