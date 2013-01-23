@@ -32,13 +32,13 @@ end
 #
 # This depends on the RubyMotion toolchain. If it changes structure,
 # the technique used here will break.
-class << Motion::Project::App
-  real_setup = instance_method(:setup).bind(Motion::Project::App)
+class Motion::Project::App
+  real_setup = method(:setup)
 
   # Define a new setup method that calls the real setup method and
   # then, if necessary, generate the bridgesupport file and add it to
   # the configuration.
-  define_method :setup do |&block|
+  define_singleton_method(:setup) do |&block|
     real_setup.call(&block)
     generate_bridgesupport(config.variables)
     configs.each_value do |app|
