@@ -1,3 +1,9 @@
+# Superseded by motion.h
+
+This gem has been replaced by
+[motion.h](https://github.com/kastiglione/motion.h), which can be used to
+expose any iOS system library, not just the Objective-C runtime.
+
 # motion-objc-runtime
 
 motion-objc-runtime exposes the Objective-C runtime API. This allows
